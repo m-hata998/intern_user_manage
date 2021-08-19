@@ -13,9 +13,9 @@
 
     IAM_POLICY_DOC_NAME='internship-user-policy'
 
-### 1.3. Lambda用IAMロールPrefix
+### 1.3. Lambda用IAMロール名
 
-    IAM_LAMBDA_ROLE_PREFIX='internship-lambda-role-'
+    IAM_LAMBDA_ROLE_NAME='internship-lambda-role-'
 
 ### 1.4. Lambda用IAMロールPATH
 
@@ -25,7 +25,7 @@
 
     LAMBDA_FUNCTION_REGION='ap-northeast-1'
 
-### 1.6. Lambda関数Prefix
+### 1.6. Lambda関数名
 
     LAMBDA_FUNCTION_PREFIX='internship-yolo5-'
 
@@ -54,14 +54,6 @@
             --output text \
     ) \
     && echo ${AWS_ID}
-
-### 2.4. ロール名
-
-    # ORIGINFILEPATH='/home/ec2-user/environment/originname'
-    # ORIGINNAME=`cat ${ORIGINFILEPATH}`
-    ORIGINNAME='template'
-    IAM_LAMBDA_ROLE_NAME=${IAM_LAMBDA_ROLE_PREFIX}${ORIGINNAME} \
-        && echo ${IAM_LAMBDA_ROLE_NAME}
 
 ### 2.5. Lambda用IAMロールのARN取得
 
