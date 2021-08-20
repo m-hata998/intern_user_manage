@@ -15,7 +15,7 @@
 
 ### 1.3. Lambda用IAMロール名
 
-    IAM_LAMBDA_ROLE_NAME='internship-lambda-role-'
+    IAM_LAMBDA_ROLE_NAME='internship-lambda-role-template'
 
 ### 1.4. Lambda用IAMロールPATH
 
