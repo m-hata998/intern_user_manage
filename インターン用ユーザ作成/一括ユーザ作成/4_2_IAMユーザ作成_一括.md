@@ -5,10 +5,6 @@
 
 ## 1. 変数の指定
 
-### 1.1. ユーザパス
-
-    IAM_USER_PATH='/internship-user/'
-
 ### 1.2. ディレクトリ指定
 
     DIR_USER_LIST_DOC="${HOME}/environment/userlist"
@@ -29,8 +25,7 @@
     cat ${FILE_USER_LIST_DOC} | while read user
     do
         aws iam create-user \
-            --user-name ${user} \
-            --path ${IAM_USER_PATH}
+            --user-name ${user} 
     done
 
 ## 3. 確認
