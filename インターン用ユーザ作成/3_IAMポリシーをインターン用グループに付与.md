@@ -27,7 +27,7 @@ IAMポリシーをグループにアタッチする。
             --query "Policies[?PolicyName==\`${IAM_POLICY_NAME}\`].Arn" \
             --output text
     ) \
-        && echo ${IAM_POLICY_ARN}
+    && echo ${IAM_POLICY_ARN}
 
 ### 2.2. ポリシーアタッチ
 

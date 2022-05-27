@@ -25,7 +25,7 @@
     cat ${FILE_USER_LIST_DOC} | while read user
     do
         aws iam create-user \
-            --user-name ${user} 
+            --user-name ${user}
     done
 
 ## 3. 確認

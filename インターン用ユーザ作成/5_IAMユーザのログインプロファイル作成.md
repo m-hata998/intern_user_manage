@@ -27,13 +27,7 @@
 
 ### 2.1. ディレクトリの存在確認
 
-    ls -d ${DIR_IAM_PASSWORD_DOC}
-
-ディレクトリが存在しない場合次項番を実施する。
-
-#### 2.1.1. ディレクトリ作成
-
-    mkdir -p ${DIR_IAM_PASSWORD_DOC}
+    ls -d ${DIR_IAM_PASSWORD_DOC} | mkdir -p ${DIR_IAM_PASSWORD_DOC}
 
 ### 2.2. ユーザのログインパスワード生成
 

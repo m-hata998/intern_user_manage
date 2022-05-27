@@ -9,17 +9,12 @@
 
     IAM_USER_NAME='interntestuser'
 
-### 1.2. ユーザパス
-
-    IAM_USER_PATH='/internship-user/'
-
 ## 2. メインの処理
 
 ### 2.1. ユーザの作成
 
     aws iam create-user \
-        --user-name ${IAM_USER_NAME} \
-        --path ${IAM_USER_PATH}
+        --user-name ${IAM_USER_NAME}
 
 ## 3. 確認
 
